@@ -1,0 +1,107 @@
+import java.util.Scanner;
+
+public class IfExample {
+    public static void main(String[] args) {
+        /* 사용자로부터 하나의 정수를 입력받아
+
+- 양수인 경우 "양수입니다"
+- 음수인 경우 "음수입니다"
+- 0인 경우 "0입니다"
+를 출력하는 프로그램을 작성하세요.
+
+[입력 예시]
+숫자를 입력하세요: -3
+
+[출력 예시]
+음수입니다
+*/
+        System.out.println("하나의 정수를 입력하시오.");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a > 0){
+            System.out.println("양수입니다.");
+        } else if (a < 0) {System.out.println("음수입니다.");
+        } else System.out.println("0 입니다.");
+
+
+
+/* 학생의 시험 점수를 입력받아 학점을 출력하는 프로그램을 작성하세요.
+
+- 90점 이상: "A"
+- 80점 이상 90점 미만: "B"
+- 70점 이상 80점 미만: "C"
+- 70점 미만: "F"
+
+[입력 예시]
+점수를 입력하세요: 85
+
+[출력 예시]
+B학점입니다
+*/
+        System.out.println("점수를 입력하시오.");        
+int score = sc.nextInt();
+if(score >= 90){
+    System.out.println("A");
+} else if (80 <= score) {
+    System.out.println("B");
+} else if (70 <= score) {
+    System.out.println("C");
+} else {
+    System.out.println("F");
+}
+
+
+/* 월을 나타내는 숫자(1~12)를 입력받아 해당하는 계절을 출력하는 프로그램을 작성하세요.
+
+- 3~5월: "봄"
+- 6~8월: "여름"
+- 9~11월: "가을"
+- 12, 1, 2월: "겨울"
+
+[입력 예시]
+월을 입력하세요(1-12): 9
+
+[출력 예시]
+가을입니다.
+ */
+        System.out.println("1~12월 중 하나를 입력하시오.");
+int season = sc.nextInt();
+        if(season >= 3 && season <= 5){
+            System.out.println("봄");
+        } else if (6 <= season && season <= 8) {
+            System.out.println("여름");
+        } else if (9 <= season && season <= 11) {
+            System.out.println("가을");
+        } else {
+            System.out.println("겨울");
+        }
+
+/* 나이를 입력받아 입장료를 계산하는 프로그램을 작성하세요.
+
+기본 입장료:
+
+- 3세 미만: 무료
+- 3세 이상 ~ 13세 미만: 5000원
+- 13세 이상 ~ 65세 미만: 10000원
+- 65세 이상: 6000원
+
+[입력 예시]
+나이를 입력하세요: 25
+
+[출력 예시]
+입장료: 10000원
+*/
+        System.out.println("나이를 입력하시오.");
+int age = sc.nextInt();
+        if(age < 3){
+            System.out.println("무료");
+        } else if (age < 13) {
+            System.out.println("5,000원");
+        } else if (age < 65) {
+            System.out.println("10,000원");  
+        } else if(age > 65) {
+            System.out.println("6,000원");
+        }
+
+    }
+}
