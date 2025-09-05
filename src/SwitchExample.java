@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class SwithchExample {
+public class SwitchExample {
     public static void main(String[] args) throws IOException {
 
         /* [문제 설명]
@@ -35,7 +35,7 @@ public class SwithchExample {
         br.close();
 
     //기존문법
-        
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new BufferedWriter(System.out));
         String nNumberSeason = br.readLine();
@@ -53,22 +53,22 @@ public class SwithchExample {
                 season = "수";
                 break;
             case 4:
-                season = "목;"
+                season = "목";
                 break;
             case 5:
-                season = "금"; 
+                season = "금";
                 break;
             case 6:
                 season = "토";
                 break;
             case 7:
                 season = "일";
-                break;                
+                break;
             default:
                 System.out.println("없는 요일입니다..");
-                
+
         }
-        
+
         bw.write(result);
         bw.flush();
         bw.close();
