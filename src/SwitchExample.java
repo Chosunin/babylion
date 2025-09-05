@@ -28,16 +28,12 @@ public class SwitchExample {
             case 7 -> result = "일";
            default -> result = "없는 요일입니다.";
         }
-
-        bw.write(result);
-        bw.flush();
-        bw.close();
-        br.close();
+        
 
     //기존문법
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new BufferedWriter(System.out));
+        BufferedReader br2 = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw2 = new BufferedWriter(new OutputStreamWriter(System.out));
         String nNumberSeason = br.readLine();
         int nN = Integer.parseInt(nNumberSeason);
         String season;
