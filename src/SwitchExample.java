@@ -61,7 +61,7 @@ public class SwitchExample {
                 season = "일";
                 break;
             default:
-                System.out.println("없는 요일입니다..");
+                season= "없는 요일입니다..";
 
         }
 
